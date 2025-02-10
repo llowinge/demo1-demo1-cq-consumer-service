@@ -15,10 +15,10 @@
             name: customerId
         - to:
             id: to-4437
-            uri: rest-openapi:api-registry/demo1-openapi-api.json#operationIdUpdateMe
+            uri: rest-openapi:api-registry/demo1-openapi-api.json#users
             parameters:
               basePath: /api/v1
-              host: https://demo1-openapi-demo1-dev.apps.cluster.com
+              host: http://localhost:8080
         - log:
             id: log-3873
             message: ${body}
